@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato|Mandali|Manjari|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manjari:700&display=swap");
+@font-face {
+  font-family: Raleway-Black;
+  src: url("../fonts/Raleway-Black.ttf"); }
+@font-face {
+  font-family: teste;
+  src: url("../fonts/Raleway-SemiBold.ttf"); }
+html, body {
+  font-size: 15px;
+  width: 100%;
+  height: 100%; }
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background: url(../images/loand.gif) no-repeat center #fff;
+  position: relative;
+  z-index: 9999; }
+
+/* PANEL TOP */
+header .painel {
+  font-family: Manjari, Tahoma, Verdana;
+  font-size: 0.88em;
+  font-weight: 500;
+  min-height: 2.55em;
+  margin-top: 0;
+  border: 1px solid #e6dfdf; }
+  header .painel i {
+    color: #516b86; }
+  header .painel a {
+    color: #516b86; }
+    header .painel a:hover {
+      text-decoration: none; }
+    header .painel a i:hover {
+      color: #54779acf; }
+
+.mobile-painel {
+  margin: 5px;
+  font-family: Manjari, Tahoma, Verdana;
+  font-weight: 500; }
+  .mobile-painel a {
+    color: #516b86; }
+    .mobile-painel a:hover {
+      text-decoration: none; }
+    .mobile-painel a i:hover {
+      color: #54779acf; }
+
+/* FIM PANEL TOP */
+/* NAVBAR */
+nav {
+  margin-top: 25px; }
+  nav .navbar-nav {
+    margin-left: 3rem;
+    margin-top: 0.5rem; }
+  nav .nav-item {
+    padding: 0px 10px 0px 4px; }
+    nav .nav-item a {
+      font-family: Manjari, Tahoma, Verdana;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      color: #424242;
+      position: relative;
+      padding: 0; }
+    nav .nav-item a::before {
+      content: '';
+      position: absolute;
+      bottom: 0%;
+      left: 0px;
+      width: 100%;
+      height: 2px;
+      background: #54779acf;
+      display: block;
+      -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+      transform-origin: right top;
+      -webkit-transform: scale(0, 1);
+      -ms-transform: scale(0, 1);
+      transform: scale(0, 1);
+      -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+      transition: transform 0.4s cubic-bezier(1, 0, 0, 1); }
+    nav .nav-item a:hover::before {
+      -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+      transform-origin: left top;
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1); }
+
+.navbar-toggler i {
+  font-size: 30px;
+  color: #546f8a; }
+
+/* FIM NAVBAR */
+/* BANNER */
+#banner {
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 40em;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url(../images/banner.jpg); }
+  #banner li {
+    margin-right: 0; }
+    #banner li svg {
+      font-size: 19px; }
+  #banner .bullet::before {
+    content: "•••";
+    color: #818e9e;
+    margin: 2px;
+    font-size: 19px; }
+  #banner h1 {
+    font-family: Manjari, Tahoma, Verdana;
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #banner h5 {
+    font-family: Manjari, Tahoma, Verdana;
+    opacity: 0.5; }
+  #banner a {
+    padding: 1rem 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: #00bb9c;
+    box-shadow: 0px 3px 0px 0px #14a28b; }
+    #banner a:hover {
+      background: #0ba289;
+      box-shadow: 0px 3px 0px 0px #279482;
+      transition: all 0.4s; }
+
+/* FIM BANNER */
+/* CONTEUDO 1 */
+.three {
+  color: #516b86;
+  padding-top: 9em;
+  padding-bottom: 10rem; }
+  .three .three-spec {
+    padding-bottom: 4rem; }
+  .three h1 {
+    font-weight: bolder; }
+  .three p {
+    font-size: 0.922em;
+    font-weight: 600;
+    font-family: Manjari, Tahoma, Verdana;
+    margin: 5px;
+    opacity: 0.8; }
+  .three svg {
+    font-size: 3.5rem; }
+  .three .flex-row:hover svg {
+    transform: scale(1.1);
+    color: #17a2b8; }
+
+/* FIM CONTEUDO 1 */
+/* CONTEUDO 2 */
+.about {
+  background-color: #e6eaf161;
+  color: #516b86;
+  padding-bottom: 8rem; }
+  .about .about-description {
+    padding: 6rem 0 0; }
+    .about .about-description h1 {
+      font-size: 2.5em; }
+    .about .about-description p {
+      font-size: 0.92em;
+      font-weight: 600;
+      font-family: Manjari, Tahoma, Verdana;
+      opacity: 0.8;
+      margin-top: 1.3rem; }
+  .about .about-contents {
+    padding: 3em 0 7em; }
+    .about .about-contents p {
+      font-size: 0.92em;
+      font-weight: 600;
+      font-family: Manjari, Tahoma, Verdana;
+      opacity: 0.8;
+      margin-top: 1.3rem; }
+    .about .about-contents small {
+      opacity: 0.8; }
+
+/* FIM CONTEUDO 2 */
+/* FOOTER */
+footer {
+  color: #fff;
+  background-color: #2f4052;
+  font-family: Manjari, Tahoma, Verdana;
+  font-weight: 500; }
+  footer h5 {
+    letter-spacing: 1.5px; }
+  footer p {
+    color: #a4b2bf; }
+  footer a {
+    color: #a4b2bf; }
+    footer a:hover {
+      color: #4a5b6b;
+      text-decoration: none; }
+  footer .more-about i {
+    font-size: 13px;
+    margin: 4px; }
+  footer .footer-contents {
+    padding: 36px 0 28px; }
+    footer .footer-contents .col-lg-5 {
+      padding-right: 0;
+      padding-left: 4px;
+      margin: 0; }
+  footer .footer-location h5 {
+    margin-bottom: 3px; }
+  footer .footer-location p {
+    margin-bottom: 2px; }
+  footer .footer-info {
+    color: #818e9e;
+    opacity: 0.9;
+    padding: 15px 0 0;
+    background-color: #293646; }
+    footer .footer-info ul li {
+      margin: 0 !important; }
+    footer .footer-info .bullet::before {
+      content: "•";
+      color: #818e9e;
+      margin: 5px; }
+    footer .footer-info a {
+      color: #818e9e;
+      opacity: 0.9; }
+      footer .footer-info a:hover {
+        color: #4a5b6b;
+        text-decoration: none; }
+
+/* FIM FOOTER */
+/* MARGIN TOP MT */
+.mt-6 {
+  margin-top: 6em; }
+
+.mt-7 {
+  margin-top: 7em; }
+
+/* FIM MARGIN TOP MT */
+/* MEDIA */
+@media (min-width: 315px) and (max-width: 986px) {
+  nav {
+    margin-top: 0; }
+    nav .navbar-nav {
+      margin-left: 0; }
+    nav .navbar-nav {
+      flex-direction: inherit;
+      height: 5em;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+  #banner {
+    margin-top: 0; }
+    #banner h1 {
+      font-size: 3.5em; }
+    #banner h5 {
+      display: none; }
+
+  .three {
+    padding-top: 5em; }
+
+  .about-contents .col-md-4 {
+    width: 88%; }
+
+  .networks h1 {
+    font-size: 2em; }
+
+  footer h5 {
+    font-size: 1.5em; }
+  footer p {
+    font-size: 1em; }
+  footer .footer-about img {
+    width: 70%; } }
+@media (max-width: 411px) and (max-width: 414px) {
+  #banner h1 {
+    font-size: 3.5em; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about .about-contents .col-md-9 {
+    flex: 0 0 101%;
+    max-width: 104%; } }
+@media (min-width: 300px) and (max-width: 768px) {
+  .about .about-contents {
+    text-align: center; } }
+@media (min-width: 300px) and (max-width: 410px) {
+  .about .about-contents {
+    padding-right: 0;
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
